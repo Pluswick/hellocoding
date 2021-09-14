@@ -350,3 +350,60 @@ int main(void) {
 
 
 //Q.16
+#include <stdio.h>
+ 
+ 
+void triangleLB (int n){
+	for(int i = 1; i <= n; i++){
+		for(int j = 1; j <= i; j++){
+			putchar('*');
+		}
+		putchar('\n');
+	}
+}
+void triangleLU (int n){
+	for(int i = n; i >= 1; i--){
+		for(int j = 1; j <= i; j++){
+			putchar('*');
+		}
+		putchar('\n');
+	}
+}
+void triangleRB (int n){
+	for(int i = 1; i <= n; i++){
+		for(int j = n; j <= (n-i); j++){
+			putchar('*');
+		}
+		putchar('\n');
+	}
+}
+void triangleRU (int n){
+	for(int i = n; i >= 1; i--){
+		for(int j = 1; j <= (n-i); j++){
+			putchar('*');
+		}
+		putchar('\n');
+	}
+}
+
+int main(void) {
+	int i, j, n;
+	do{
+		printf("직각 이등변 삼각형을 나타내시오.\n");
+		printf("(왼쪽 위가 직각인 이등변 삼각형)\n");
+		printf("몇 단 삼각형입니까? : ");
+		scanf("%d", &n);
+	}while(n <= 0);
+ 
+	triangleLB(n);
+	triangleLU(n);
+	triangleRB(n);
+	triangleRU(n);
+ 
+	return 0;
+}
+
+
+
+
+//Q.17
