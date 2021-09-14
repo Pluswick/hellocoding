@@ -282,3 +282,71 @@ int main(void) {
 
 
 //Q.11
+못함
+
+
+
+
+//Q.12
+못함
+
+
+
+
+//Q.13
+못함
+
+
+
+
+//Q.14
+#include <stdio.h>
+ 
+int main(void) {
+   int i, j, n;
+   do{
+      printf("사각형을 출력합니다.\n");
+      printf("입력할 수 : ");
+      scanf("%d", &n);
+   }while(n <= 0);
+ 
+   for(i = 1; i <= n; i++){
+      for(j = 1; j <= n; j++){
+         putchar('*');
+      }
+      putchar('\n');
+   }
+ 
+   return 0;
+}
+
+
+
+
+//Q.15
+#include <stdio.h>
+ 
+int main(void) {
+   int i, j, s, h;
+   do{
+      printf("직사각형을 출력합니다.\n");
+      printf("높이 : ");
+      scanf("%d", &h);
+      printf("너비 : ");
+      scanf("%d", &s);
+   }while(h <= 0 && s <= 0);
+ 
+   for(i = 1; i <= h; i++){
+      for(j = 1; j <= s; j++){
+         putchar('*');
+      }
+      putchar('\n');
+   }
+ 
+   return 0;
+}
+
+
+
+
+//Q.16
