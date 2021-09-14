@@ -1,0 +1,87 @@
+//Q.1
+#include <stdio.h>
+ 
+int max4(int a, int b, int c, int d){
+   int max = a;
+   if(b > max) max = b;
+   if(c > max) max = c;
+   if(d > max) max = d;
+   return max;
+}
+ 
+int main(void) {
+   int x, y, w, z;
+ 
+   printf("네 값의 최댓값을 구합니다.\n");
+   printf("네 값을 입력하시오.\n");
+   printf("첫번째 값 : ");
+   scanf("%d", &x);
+   printf("두번째 값 : ");
+   scanf("%d", &y);
+   printf("세번째 값 : ");
+   scanf("%d", &w);
+   printf("네번째 값 : ");
+   scanf("%d", &z);
+ 
+   printf("max4(%d, %d, %d, %d) = %d\n", x, y, w, z, max4(x, y, w, z));
+   return 0;
+}
+
+
+
+//Q.2
+#include <stdio.h>
+ 
+int min3(int a, int b, int c){
+   int min = a;
+   if(b < min) min = b;
+   if(c < min) min = c;
+   return min;
+}
+ 
+int main(void) {
+   int x, y, w;
+ 
+   printf("세 값의 최솟값을 구합니다.\n");
+   printf("세 값을 입력하시오.\n");
+   printf("첫번째 값 : ");
+   scanf("%d", &x);
+   printf("두번째 값 : ");
+   scanf("%d", &y);
+   printf("세번째 값 : ");
+   scanf("%d", &w);
+ 
+   printf("min3(%d, %d, %d) = %d\n", x, y, w, min3(x, y, w));
+   return 0;
+}
+
+
+
+//Q.3
+#include <stdio.h>
+ 
+int min4(int a, int b, int c, int d){
+   int min = a;
+   if(b < min) min = b;
+   if(c < min) min = c;
+   if(d < min) min = d;
+   return min;
+}
+ 
+int main(void) {
+   int x, y, w, z;
+ 
+   printf("네 값의 최솟값을 구합니다.\n");
+   printf("네 값을 입력하시오.\n");
+   printf("첫번째 값 : ");
+   scanf("%d", &x);
+   printf("두번째 값 : ");
+   scanf("%d", &y);
+   printf("세번째 값 : ");
+   scanf("%d", &w);
+   printf("네 번째 값 : ");
+   scanf("%d", &z);
+ 
+   printf("min4(%d, %d, %d, %d) = %d\n", x, y, w, z, min4(x, y, w, z));
+   return 0;
+}
